@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-label {
+    color: white; /* Cambia el color de las letras a blanco */
+    font-size: 16px; /* Tamaño de fuente genérico */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fdfdfd;
+    line-height: 1.6;
+    background-image: url("https://www.criptonoticias.com/wp-content/uploads/2019/03/Lightning-Loop-Bitcoin-Blockchain.jpeg") ;
+    /*background-image: url('https://media.istockphoto.com/id/1319716730/es/foto/render-3d-moneda-digital-de-monedas-de-oro-bitcoin-btc-fondo-de-monedas-criptomoneda-mercado.jpg?s=612x612&w=0&k=20&c=cXURzei-z8X2ssmIyoffjopJnPu36K7qnKmS4UnrUD4=');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 20px); /* Altura de la pantalla menos 20px para el footer */
+    margin-bottom: 20px; /* Espacio en la parte inferior para el footer */
+}
+
+body, input, label, .btn-enviar, .navbar, h1, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px; /* Espacio después de los encabezados */
+}
+
+h1, p {
+    color: white; /* Cambia el color de las letras a blanco */
+}
+
+/* Enlaces */
+a {
+    color: #007bff; /* Color genérico para enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1200px; /* Ancho máximo para la legibilidad */
+    margin: auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Botones */
+
+
+.btn:hover {
+    background: rgba(123, 65, 157, 0.62); /* Oscurecer el botón al pasar el mouse */
+}
+
+.btn-primary {
+    background-color: rgba(123, 65, 157, 0.62); /* Personaliza el color de fondo de los botones primarios */
+}
+
+.form-control {
+    border-radius: 0; /* Cajas de texto con bordes cuadrados */
+}
+
+.footer {
+    position: fixed; /* Footer fijo en la parte inferior */
+    bottom: 0;
+    width: 100%;
+    height: 20px; /* Altura del footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #6a1b9a; /* Cambia el color de fondo del navbar a un tono de violeta */
+}
+
+.navbar-brand, .nav-link {
+    color: #151515 !important;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: rgba(131, 60, 175, 0.42) !important; /* Cambia el color de fondo del navbar a un tono de violeta */
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand,
+.navbar.navbar-expand-lg.navbar-light.bg-light .nav-link {
+    color: white !important; /* Cambia el color de las letras a blanco */
+}
+
+.ml-25 {
+    margin-left: 25%; /* Añade un margen izquierdo del 25% */
+}
+.btn-enviar {
+    background-color: #7c51a9 !important; /* Cambia el color de fondo del botón a un tono de violeta */
+    border-color: rgba(248, 248, 248, 0.45) !important; /* Cambia el color del borde del botón a un tono de violeta */
+}
+
+.input-mensaje {
+    font-size: 3em; /* Tamaño actual de la fuente */
+    line-height: 1.2; /* Altura actual de la línea */
+    width: 200%; /* Aumenta el ancho al 200% del ancho del contenedor padre */
+    height: 200%; /* Ajusta el alto automáticamente basado en el contenido */
+  }
+
+.logo {
+    height: 50px; /* Ajusta este valor según tus necesidades */
+    width: auto; /* Esto mantendrá la relación de aspecto de la imagen */
+    border-radius: 50%; /* Esto redondeará los bordes del logo */
+    border: 2px solid rgba(255, 255, 255, 0.65); /* Esto añadirá un borde blanco alrededor del logo */
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.67); /* Esto añadirá un borde blanco difuminado alrededor del logo */
+    margin-right: 20px; /* Esto añadirá un margen a la derecha del logo */
+}

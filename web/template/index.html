@@ -1,0 +1,27 @@
+{{ template "base" . }}
+{{ define "title" }} StreamLight - Payments {{ end }}
+{{ define "content" }}
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-between align-items-center">
+                <nav>
+                    <form action="http://localhost:8080/pago" method="post">
+                        <label for="amount" class="form-label">Donación (en satoshis):</label><br>
+                        <input type="number" id="amount" class="form-control" name="amount" required><br>
+                        <label for="customer_name" class="form-label">Tu Nombre:</label><br>
+                        <input type="text" id="customer_name" class="form-control" name="customer_name" required><br>
+                        <label for="customer_email" class="form-label">Tu mail:</label><br>
+                        <input type="email" id="customer_email" class="form-control" name="customer_email" required><br>
+                        <label for="message" class="form-label">Mensaje (opcional):</label><br>
+                        <input type="text" id="message" class="form-control input-mensaje" name="message"><br><br><br>
+                        <button type="submit" class="btn btn-primary btn-enviar"  value="Enviar">Enviar</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+{{ end }}
